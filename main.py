@@ -22,7 +22,11 @@ if __name__ == '__main__':
     while True:
      print("listnning....")
      query = takecammand()
-     if "open youtube".lower() in query.lower():
-         say("open youtube")
-         webbrowser.open("https://youtube.com")
+     sites = [["youtube","https://youtube.com"],
+             ["chatgpt","https://chatgpt.com"],
+             ["whatsapp","https://whatsapp.com"],]
+     for site in sites:
+        if f"open {site[0]}".lower() in query.lower():
+            say(f"open site {site[0]} sir...")
+            webbrowser.open(site[1])
      #say(text)

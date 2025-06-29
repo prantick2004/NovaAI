@@ -18,12 +18,12 @@ def takecammand():
             return " sorry some erroe occurred"
 if __name__ == '__main__':
     print('PyCharm')
-    say("hii am Nova A.I. How can I help you")
+    say("hii am Rinex A.I. How can I help you")
     while True:
      print("listnning....")
      query = takecammand()
      sites = [["youtube","https://youtube.com"],
-             ["chatgpt","https://chatgpt.com"],
+             ["chatgpt", "https://chatgpt.com"],
              ["whatsapp","https://whatsapp.com"],]
      for site in sites:
         if f"open {site[0]}".lower() in query.lower():
